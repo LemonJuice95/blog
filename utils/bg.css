@@ -1,5 +1,11 @@
-div {
-    width: 5835;
-    height: 3520;
-    background: rgba(255, 255, 255, 0.5), url("../assets/images/bg.png")
+div::before {
+    content: "";
+    position: absolute;
+    width: 5835px;
+    height: 3520px;
+    top: 0;
+    left: 0;
+    background: url("../assets/images/bg.png");
+    opacity: 0.25;
+    z-index: -1;
 }
