@@ -1,11 +1,27 @@
-div::before {
-    content: "";
-    position: absolute;
-    width: 5835px;
-    height: 3520px;
+.bg-container {
+    position: fixed;
     top: 0;
     left: 0;
-    background: url("../assets/images/bg.png");
-    opacity: 0.25;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-image {
+    position: absolute;
+    background-image: url("../assets/images/bg.png");
+    background-position: right bottom, left top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.bg-overlay {
+    position: absolute;
+    background-color: white;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
